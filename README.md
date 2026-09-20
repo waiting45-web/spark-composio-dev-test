@@ -2,6 +2,6 @@
 
 Repository for Spark + Composio development capability verification.
 
-- **Environment**: Spark + Composio
-- **Type**: Public
-- **Status**: Verified
+- **Pipeline**: Spark + Composio Dev Pipeline
+- **Framework**: Vite + TypeScript
+- **Deployment**: GitHub Pages via GitHub Actions
