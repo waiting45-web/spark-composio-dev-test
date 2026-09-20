@@ -3,11 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spark + Composio Dev Pipeline</title>
+    <title>ArcGIS 2D Web GIS Runtime - Spark + Composio</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.30/esri/themes/light/main.css" />
     <link rel="stylesheet" href="./src/style.css" />
+    <script src="https://js.arcgis.com/4.30/"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="header-panel">
+      <h1 id="app-title">ArcGIS 2D Web GIS Runtime</h1>
+      <div class="status-grid">
+        <div class="status-item">SDK Loaded: <span id="sdk-status" class="badge">Checking...</span></div>
+        <div class="status-item">View.when(): <span id="view-status" class="badge">Pending</span></div>
+        <div class="status-item">FeatureLayer: <span id="layer-status" class="badge">Loading</span></div>
+        <div class="status-item">REST Query: <span id="query-status" class="badge">Pending</span></div>
+        <div class="status-item">Feature Count: <span id="feature-count" class="badge">N/A</span></div>
+        <div class="status-item">Container Dimensions: <span id="dimensions" class="badge">0x0</span></div>
+      </div>
+    </div>
+    <div id="viewDiv"></div>
     <script type="module" src="./src/main.ts"></script>
   </body>
 </html>
